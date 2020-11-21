@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: rgb(30,35,38);
+}
+
+.field {
+    margin: 5rem auto;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+.game {
+    position: relative;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 125px;
+    height: 125px;
+    background-color: rgba(255, 255, 255, 0.296);
+    color: white;
+    font-size: 2.3rem;
+    line-height:  125px;
+    text-align: center;
+}
+
+.ceil {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    background: linear-gradient(320deg, rgb(121, 2, 121) 30%, rgba(167, 0, 182, 0.699) 90%);
+    box-shadow: inset 5px 5px 15px 0 rgba(65, 0, 56, 0.556), inset -3px 0 15px 0 rgba(36, 0, 25, 0.487);
+    width: 14.1rem;
+    height: 14.1rem;
+    font-size: 4rem;
+    color: rgba(30, 35, 38, 0.651);
+    font-family: 'Space Grotesk', sans-serif;
+    transition: .5s;
+
+}
+
+.ceil:hover {
+    box-shadow: inset 5px 5px 15px 5px rgba(40, 0, 59, 0.556), inset -3px 0 15px 5px rgba(143, 1, 100, 0.487);
+    transition: .5s;
+    
+}
+
+.empty {
+    opacity: 0;
+    cursor: default;
+}
+
+.start-menu {
+    margin: 25vh auto;
+    width: 500px;
+}
+
+.start-menu > div {
+    width: 500px;
+    height: 100px;
+    font-size: 3rem;
+    margin: 5px 0;
+    background-color: rgba(255, 255, 255, 0.296);
+    text-align: center;
+    line-height: 100px;
+}
+
+.resume, .save, .restart{
+    width: 500px;
+    height: 100px;
+    font-size: 3rem;
+    margin: 5px auto;
+    background-color: rgba(255, 255, 255, 0.398);
+    text-align: center;
+    line-height: 100px;
+}
+
+.resume:hover, .save:hover, .restart:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.start-menu > div:hover, .menu:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.panel {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.timer, .steps {
+    color: white;
+    font-size: 2.3rem;
+}
+
+.steps {
+    float: left;
+}
+
+.timer {
+    float: right;
+}
+
+.game-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.378);
+}
+
+.load-block {
+    width: 700px;
+    height: 500px;
+    margin: 150px auto;
+}
+
+.win-block {
+    width: 700px;
+    margin: 50px auto;
+}
+
+.message, .win-message {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.438);
+    font-size:3rem;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px 0;
+}
+
+.back, .save-block > div, .win-restart {
+    width: 100%;
+    height: 100px;
+    font-size:3rem;
+    background-color: rgba(255, 255, 255, 0.22);
+    margin: 5px 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+.back:hover, .save-block > div:hover, .win-restart:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.438);
+}
